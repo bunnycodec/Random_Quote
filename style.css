@@ -1,0 +1,74 @@
+body{
+  background: url("wallpaper.jpg");
+}
+
+#head{
+  font-size: 80px;
+  color: black;
+  font-family: "Georgia";
+  margin-bottom: 20px;
+}
+
+p{
+  color: black;
+  font-family: "Times New Roman";
+  font-size: 20px;
+}
+
+img{
+  border: 2px black solid;
+  border-radius: 2em;
+}
+
+.quotes{
+   background: url("wallpaper2.jpg");
+   border: black 1px solid;
+   border-radius: 2em;
+   width: 30%;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   height: auto;
+   padding: 60px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.quote{
+  color: #d35400;
+  font-size: 30px;
+  font-family: "Palatino"
+}
+
+.author{
+  color: white;
+  font-size: 25px;
+  font-family: "Palatino";
+  margin-left: 100px;
+}
+
+.btn:hover{
+  color: white;
+  background: black;
+}
+
+.sign{
+  color: #d35400;
+  font-size: 30px;
+  font-family: "Palatino"
+}
+
+.footer {
+  width:1500px;
+  text-align:right;
+  display:block;
+  margin:40px auto autoauto;
+  font-size:20px;
+  color:black;
+}
+
+#aa {
+    font-weight: 400;
+    font-size: 40px;
+    text-decoration:none;
+    color: black;
+  }
