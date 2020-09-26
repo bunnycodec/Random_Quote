@@ -1,74 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&display=swap');
+
 body{
   background: url("wallpaper.jpg");
 }
 
-#head{
-  font-size: 80px;
-  color: black;
-  font-family: "Georgia";
-  margin-bottom: 20px;
-}
-
-p{
-  color: black;
-  font-family: "Times New Roman";
-  font-size: 20px;
-}
-
-img{
-  border: 2px black solid;
-  border-radius: 2em;
+.header {
+  font-family: 'Amaranth', sans-serif;
 }
 
 .quotes{
    background: url("wallpaper2.jpg");
-   border: black 1px solid;
-   border-radius: 2em;
-   width: 30%;
-   margin-top: 20px;
-   margin-bottom: 20px;
-   height: auto;
-   padding: 60px;
-   margin-left: auto;
-   margin-right: auto;
+   font-family: "Palatino";
 }
 
 .quote{
-  color: #d35400;
-  font-size: 30px;
-  font-family: "Palatino"
+  color: #FEE1C7;
+  font-size: 150%;
 }
 
 .author{
-  color: white;
-  font-size: 25px;
-  font-family: "Palatino";
-  margin-left: 100px;
+  font-family: "Times New Roman";
+  color: #FA7E61;
+  font-size: 200%;
 }
 
-.btn:hover{
-  color: white;
-  background: black;
+footer {
+  font-family: 'Josefin Sans', sans-serif;
+  position: relative;
+  font-size: 120%;
+  font-weight: normal;
+  color: black;
 }
 
-.sign{
-  color: #d35400;
-  font-size: 30px;
-  font-family: "Palatino"
+body a, button,
+a:hover,
+a:active,
+a:visited {
+  color: #922031;
+  text-decoration: none !important;
+  outline: none !important;
 }
-
-.footer {
-  width:1500px;
-  text-align:right;
-  display:block;
-  margin:40px auto autoauto;
-  font-size:20px;
-  color:black;
-}
-
-#aa {
-    font-weight: 400;
-    font-size: 40px;
-    text-decoration:none;
-    color: black;
-  }
