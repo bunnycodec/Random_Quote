@@ -1,71 +1,98 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Sunny Kumar" />
+    <title>Random Quote</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Sunny Kumar">
-    <title> Random Quote </title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
+  <body>
     <div class="header container text-center">
-        <h1 class="display-2 py-5">Random Quote Generator</h1>
+      <h1 class="display-2 py-5">Random Quote Generator</h1>
     </div>
 
     <div class="row container text-center mt-4">
-        <div class="col">
-            <img class="img-fluid rounded shadow border border-dark" src="quote.jpg">
-            <figure>
-                <blockquote class="blockquote">
-                    <p class="pt-2">“In quoting others, we cite ourselves.”</p>
-                </blockquote>
-                <figcaption class="blockquote-footer text-dark">
-                    Julio Cortázar, Around the Day in Eighty Worlds
-                </figcaption>
-            </figure>
-
+      <div class="col">
+        <img
+          class="img-fluid rounded shadow border border-dark"
+          src="quote.jpg"
+        />
+        <figure>
+          <blockquote class="blockquote">
+            <p class="pt-2">“In quoting others, we cite ourselves.”</p>
+          </blockquote>
+          <figcaption class="blockquote-footer text-dark">
+            Julio Cortázar, Around the Day in Eighty Worlds
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col">
+        <div class="quotes border border-dark rounded w-100 h-75 p-4">
+          <div class="quote">
+            &#8220; <span class="randomQuote"></span> &#8221;
+          </div>
+          <div class="author text-right pt-4"></div>
         </div>
-        <div class="col">
-            <div class="quotes border border-dark rounded w-100 h-75 p-4">
-                <div class="quote">&#8220; <span class="randomQuote"></span> &#8221;</div>
-                <div class="author text-right pt-4"> – Lionel Messi</div>
-            </div>
-            <div class="h-25 mt-3">
-                <a href="https://www.linkedin.com/in/bunnycodec/" target="_blank"
-                    class="btn btn-info border border-dark mx-2"><i class="text-dark fa fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/bunnycodec" target="_blank" class="btn btn-info border border-dark mx-2"><i
-                        class="text-dark fa fa-github"></i>
-                </a>
-                <a href="https://www.instagram.com/bit_2_byte/" target="_blank"
-                    class="btn btn-info border border-dark mx-2"><i class="text-dark fa fa-instagram"></i>
-                </a>
-                <button class="btn btn-dark next-quote mx-2 border border-info" type="submit">Next Quote</button>
-            </div>
+        <div class="h-25 mt-3">
+          <a
+            href="https://www.linkedin.com/in/bunnycodec/"
+            target="_blank"
+            class="btn btn-info border border-dark mx-2"
+            ><i style="color: black;" class="fa fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/bunnycodec"
+            target="_blank"
+            class="btn btn-info border border-dark mx-2"
+            ><i style="color: black;" class="fa fa-github"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/bit_2_byte/"
+            target="_blank"
+            class="btn btn-info border border-dark mx-2"
+            ><i style="color: black;" class="fa fa-instagram"></i>
+          </a>
+          <button
+            class="btn btn-dark next-quote mx-2 border border-info"
+            type="submit"
+          >
+            Next Quote
+          </button>
         </div>
+      </div>
     </div>
 
     <footer id="footer" class="text-center py-3 fixed-bottom shadow-lg">
-        <div class="container">
-            Designed & Coded by
-            <a href="https://www.linkedin.com/in/bunnycodec" target="_blank">
-                Sunny Kumar</a>
-        </div>
+      <div class="container">
+        Designed & Coded by
+        <a href="https://www.linkedin.com/in/bunnycodec" target="_blank">
+          Sunny Kumar</a
+        >
+      </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
-    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
     <script type="text/javascript" src="java.js"></script>
-
-</body>
-
+  </body>
 </html>
